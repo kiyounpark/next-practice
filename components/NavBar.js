@@ -18,6 +18,12 @@ export default function NavBar() {
       >
         어바웃으로
       </Link>
+      <Link
+        href="/wonhee"
+        className={`noneUnderLine ${router.pathname === "/wonhee" && "active"}`}
+      >
+        원희에게로
+      </Link>
       <style>{`
     .noneUnderLine {
         text-decoration : none;
@@ -26,6 +32,7 @@ export default function NavBar() {
     .active{
         color : blue;
     }
+
 `}</style>
     </nav>
   );
