@@ -8,6 +8,15 @@ export default function About() {
     <div>
       <h1>hello</h1>
       <NavBar></NavBar>
+      <style jsx>{`
+        .noneUnderLine {
+          text-decoration: none;
+          color: black;
+        }
+        .active {
+          color: blue;
+        }
+      `}</style>
     </div>
   );
 }

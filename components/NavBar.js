@@ -18,15 +18,15 @@ export default function NavBar() {
       >
         어바웃으로
       </Link>
-      <style jsx>{`
-        .noneUnderLine {
-          text-decoration: none;
-          color: black;
-        }
-        .active {
-          color: blue;
-        }
-      `}</style>
+      <style>{`
+    .noneUnderLine {
+        text-decoration : none;
+        color : black;
+    }
+    .active{
+        color : blue;
+    }
+`}</style>
     </nav>
   );
 }
