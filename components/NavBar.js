@@ -7,10 +7,20 @@ export default function NavBar() {
   return (
     <nav>
       <Link href="/">
-        <span style={{ color: "red" }}>홈으로</span>
+        <span
+          style={{ color: router.pathname === "/" ? "red" : "blue" }}
+          href="/"
+        >
+          홈으로
+        </span>
       </Link>
       <p></p>
-      <Link href="/about">어바웃으로</Link>
+      <Link
+        style={{ color: router.pathname === "/about" ? "red" : "blue" }}
+        href="/about"
+      >
+        어바웃으로
+      </Link>
     </nav>
   );
 }
