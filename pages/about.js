@@ -1,3 +1,13 @@
+import { useState } from "react";
+import NavBar from "../components/NavBar";
+
 export default function About() {
-  return <h1>이거 좋네</h1>;
+  const [conuter, setCounter] = useState(0);
+  console.log("sex");
+  return (
+    <div>
+      <h1>hello</h1>
+      <NavBar></NavBar>
+    </div>
+  );
 }
