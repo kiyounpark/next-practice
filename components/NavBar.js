@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function NavBar() {
@@ -7,7 +7,8 @@ export default function NavBar() {
 
   return (
     <nav>
-      <Image alt="로고 이미지" className="img" />
+      <img src="/vercel.svg" alt="로고"></img>
+
       <article>
         <Link
           href="/"
@@ -25,7 +26,7 @@ export default function NavBar() {
         </Link>
       </article>
 
-      <style jsx>{`
+      <style>{`
         nav {
           display: flex;
           flex-direction: column;
@@ -44,6 +45,8 @@ export default function NavBar() {
         .active {
           color: blue;
         }
+
+       
       `}</style>
     </nav>
   );
